@@ -1,5 +1,13 @@
+<script lang="ts" setup>
+import { Toaster } from "vue-sonner";
+</script>
+
 <template>
-	<div>
+	<NuxtLayout>
+		<ClientOnly>
+			<Toaster richColors />
+		</ClientOnly>
+		<NuxtLoadingIndicator />
 		<NuxtPage />
-	</div>
+	</NuxtLayout>
 </template>
